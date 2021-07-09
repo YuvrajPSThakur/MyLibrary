@@ -1,0 +1,189 @@
+body {
+  background-color: rgb(231, 205, 171);
+  
+}
+.top{
+    background-color: rgba(238, 236, 125, 0.774);
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: cursive;
+    color: chocolate;
+    margin: 0;
+}
+
+
+#newBtn-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: cursive;
+    color: chocolate;
+}
+
+#newBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  font-size: 25px;
+  background-color: rgba(238, 236, 125, 0.774);
+  border-radius: 10px;
+  border: solid 2px chocolate;
+  font-family: cursive;
+    color: chocolate;
+}
+
+#Library-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#popUp {
+
+    border: solid 3px chocolate ;
+    border-radius: 20px;
+}
+
+
+/* Book and its contents */
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(145, 64, 7);
+  border-radius: 5px;
+  height: 300px;
+  width: 250px;
+  padding: 15px;
+  margin: 20px;
+  background-color: rgb(211, 211, 159);
+  border-top-left-radius: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: chocolate;
+}
+
+.author {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.pages {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.readBtn {
+  font-size: 15px;
+  font-family: cursive;
+  height: 35px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: solid 1px black;
+}
+
+#removeBtn {
+  font-size: 15px;
+  font-family: cursive;
+  height: 35px;
+  width: 110px;
+  border-radius: 4px;
+  border: solid 1px rgb(75, 4, 4);
+  background-color: red;
+}
+
+#addBtn {
+  font-size: 20px;
+  font-family: cursive;
+  height: 35px;
+  width: 110px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  border: solid 1px rgb(1, 32, 15);
+}
+
+/* Modal popup box  https://www.w3schools.com/howto/howto_css_modals.asp */
+
+/* The Modal (background) */
+input#title {
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+  border: solid 1px rgb(219, 123, 32);
+  border-radius: 5px;
+}
+input#author {
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+  border: solid 1px rgb(219, 123, 32);
+  border-radius: 5px;
+}
+input#pages {
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+  border: solid 1px rgb(219, 123, 32);
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1);
+}
+#popUp {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(107, 114, 10, 0.603); /* Fallback color */
+  background-color: rgba(14, 37, 78, 0.568); /* Black w/ opacity */
+  font-size: 30px;
+}
+
+/* Modal Content/Box */
+#form {
+  font-family: cursive;
+  color: chocolate;
+  background-color: rgba(238, 236, 125, 0.774);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 20%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: rgb(252, 19, 19);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
